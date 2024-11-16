@@ -4,7 +4,7 @@ const fetch = require('node-fetch'); // For sending HTTP requests, if not using 
 // Register User Function for REST API
 async function registerUser(full_name, username, password) {
     try {
-        const response = await fetch('model/register.php', {
+        const response = await fetch('model/register.model.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ full_name, username, password })
